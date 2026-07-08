@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Catálogo de productos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="barra-superior">
+    <div class="marca">Leo<span>SBL</span></div>
+    <button class="boton-carrito" id="id-boton-carrito" aria-pressed="false">
+      <span>🛒</span>
+      <span id="id-etiqueta-carrito">Carrito</span>
+      <span class="distintivo-carrito cero" id="id-contador-carrito">0</span>
+    </button>
+  </header>
+
+  <div class="cuerpo-app">
+    <aside class="barra-lateral">
+      <h2>Categorías</h2>
+      <div class="lista-categorias" id="id-lista-categorias"></div>
+      <div class="pie-barra-lateral">
+        <button class="boton-limpiar-filtros" id="id-boton-limpiar-filtros">Mostrar todas</button>
+      </div>
+    </aside>
+
+    <main class="pantalla-principal">
+      <div class="encabezado-pantalla">
+        <h1 id="id-titulo-pantalla">Productos</h1>
+        <span class="contador-resultados" id="id-contador-resultados"></span>
+        <div class="acciones-pantalla" id="id-acciones-pantalla"></div>
+      </div>
+      <div id="id-contenido-pantalla"></div>
+    </main>
+  </div>
+
+<script src="JS/script.js"></script>
+</body>
+</html>
